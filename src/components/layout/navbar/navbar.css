@@ -1,0 +1,22 @@
+ul li{
+    list-style: none;
+}
+
+.contenedorNav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.ahref{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.carrito{
+    margin-left: 15px;
+}
