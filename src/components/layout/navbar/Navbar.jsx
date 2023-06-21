@@ -1,10 +1,12 @@
 import CartWidget from '../../common/cartWidget/CartWidget';
 import './navbar.css';
-
+import logo from '../../../assets/img/ps5logo.png';
 const Navbar = () => {
     return (
         <section className='contenedorNav'>
-            <a href=""><h1>logo</h1></a>
+            <a href="">
+                <img src={logo} alt="ps5" />
+            </a>
 
             <ul className='ahref'>
                 <a href=""><li>Team</li></a>

@@ -1,5 +1,6 @@
 ul li{
     list-style: none;
+
 }
 
 .contenedorNav{
@@ -17,6 +18,17 @@ ul li{
     gap: 10px;
 }
 
+.ahref a{
+    text-decoration: none;
+    color: rgb(2, 2, 121);
+}
+
 .carrito{
     margin-left: 15px;
+    color: rgb(2, 2, 121);
+}
+
+.contenedorNav img{
+    width: 60px;
+    height: 60px;
 }
