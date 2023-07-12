@@ -1,25 +1,30 @@
-import { useState } from "react";
-import Navbar from "./components/layout/navbar/navbar";
-import Home from "./components/page/home/home";
 
-
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ItemListContainer from "./components/page/itemList/itemListContainer";
+import ItemDetailContainer from "./components/page/itemDetail/ItemDetailContainer";
+import Layout from "./components/layout/Layout";
+import Cart from "./components/page/cart/Cart";
 
 function App() {
 
-  const [saludo1, setSaludo1] = useState("Hola buenos dias!");
-
-  const responder = (respuesta) => {
-    setSaludo1(respuesta)
-  }
-
   return (
-    <>
-      <Navbar />
-      <Home saludo1={saludo1} responder={responder} />
-    </>
-  );
-}
 
+    <BrowserRouter>
+
+      <Routes>
+        <Route element={<Layout />}>
+
+          <Route path="/" element={<ItemListContainer />}></Route>
+          <Route path="/Details/:id" element={<ItemDetailContainer />}></Route>
+          <Route path="/Cart" element={<Cart />}></Route>
+
+          <Route path="/Category/:categoryName" element={<ItemListContainer />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
+
+  )
+}
 export default App;
 

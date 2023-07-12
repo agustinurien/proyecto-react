@@ -1,0 +1,33 @@
+.cardContainer{
+    width: 400px;
+}
+
+.cImagen{
+    border-bottom: 5px solid rgb(0, 63, 171);
+}
+
+.cCardContent{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cBotones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9px 20px;
+}
+
+.boton{
+    color: white;
+    background-color:rgb(0, 63, 171);
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.boton:hover{
+    color: rgb(0, 63, 171);
+    background-color:white;
+    border: 1px solid  rgb(0, 63, 171);
+}

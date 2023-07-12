@@ -1,24 +1,35 @@
 import CartWidget from '../../common/cartWidget/CartWidget';
 import './navbar.css';
 import logo from '../../../assets/img/ps5logo.png';
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return (
-        <section className='contenedorNav'>
-            <a href="">
-                <img src={logo} alt="ps5" />
-            </a>
-
-            <ul className='ahref'>
-                <a href=""><li>Team</li></a>
-                <a href=""><li>Contacto</li></a>
-                <a href=""><li>Categorias</li></a>
-                <div className='carrito'>
-                    <CartWidget />
+        <div>
+            <section className='contenedorNav'>
+                <div>
+                    <Link to="">
+                        <img src={logo} alt="ps5" />
+                    </Link>
                 </div>
 
-            </ul>
+                <ul className='ahref'>
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/"><li>Todos</li></Link>
+                    <Link to="/category/PS5"><li>ps5</li></Link>
+                    <Link to="/category/PS4"><li>ps4</li></Link>
+                </ul>
+                <div>
+                    <div className='carrito'>
+                        <CartWidget />
+                    </div>
+                </div>
 
-        </section>
+
+            </section>
+
+        </div>
+
     )
 }
 

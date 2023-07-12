@@ -1,11 +1,18 @@
-import { BsCart } from 'react-icons/bs';
+import { ShoppingCart } from '@mui/icons-material';
+import { Badge } from '@mui/material';
+import { Link } from 'react-router-dom';
+
 
 
 
 const CartWidget = () => {
     return (
         <>
-            <BsCart />
+            <Link to="/Cart">
+                <Badge badgeContent={0} color="primary" showZero>
+                    <ShoppingCart fontSize='large' />
+                </Badge>
+            </Link>
         </>
     )
 }
