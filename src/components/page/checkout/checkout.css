@@ -1,0 +1,146 @@
+.contenedor{
+    padding: 30px;
+    height: 80vh;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.contenedorComponente{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 75%;
+}
+
+.contenedorImg{
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contenedorForm{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
+}
+
+.contenedorForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 35px;
+}
+
+.contenedorForm form input{
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    background-color: rgb(241, 241, 241);
+    border-bottom: 3px solid rgb(32, 32, 32);
+    padding-left: 10px;
+}
+
+.nombreApellido{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.contenedorForm button{
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 5px;
+    height: 45px;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
+}
+
+.contenedorForm button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 131, 247);
+}
+
+.tituloGracias{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.contenedorFinalizada{
+    margin: 50px 100px;
+    background-color: white;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
+}
+
+.contenedorFinalizada a{
+    text-decoration: none;
+}
+
+.icono-check{
+    font-size: 60px;
+    color: rgb(14, 164, 19);
+}
+
+.contenedorCodigo{
+    background-color: rgb(237, 237, 237);
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-family: 'Anton', sans-serif;
+}
+
+.contenedorCodigo h3{
+    font-size: 22px;
+}
+
+.contenedorCodigo p{
+    font-size: 12px;
+}
+
+.textoBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 112, 214);
+    
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color:rgb(255, 255, 255)
+    
+    
+}
+.textoBoton:hover{
+    background-color: rgb(51, 129, 239);
+}

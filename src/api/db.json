@@ -1,43 +1,48 @@
 {
     "productos": [
         {
-            "id": 1,
+            
             "title": "Mando PS5",
-            "price": 30000,
-            "descripcion": "un control inalambrico para la playstation5",
+            "price": 17999,
+            "descripcion": "Mando PS5 es el controlador inalámbrico diseñado para la consola de PS5",
             "category": "PS5",
+            "stock": 5,
             "img": "https://arsonyb2c.vtexassets.com/arquivos/ids/348023/PS5_DS_Pshot_A.jpg?v=637363644415730000"
         },
         {
-            "id": 2,
+            
             "title": "Mando PS5-pro",
             "price": 80000,
             "descripcion": "un control inalambrico para la playstation5 para profesionales",
             "category": "PS5",
+            "stock": 4,
             "img": "https://i.ytimg.com/vi/zWPRa9Wz9gA/maxresdefault.jpg"
         },
         {
-            "id": 3,
+            
             "title": "Consola PS5",
             "price": 400000,
             "descripcion": "consola de videojuegos, playstation5",
             "category": "PS5",
+            "stock": 3,
             "img": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
         },
         {
-            "id": 4,
+            
             "title": "Consola PS4-Slim",
             "price": 200000,
             "descripcion": "consola de videojuegos, playstation4-slim",
             "category": "PS4",
+            "stock": 3,
             "img": "https://bienestarconfort.com.ar/wp-content/uploads/2021/07/ps4-slim-image-block-01-en-24jul20.png"
         },
         {
-            "id": 5,
+            
             "title": "Mando PS4",
             "price": 15000,
             "descripcion": "control de videojuegos, playstation4",
             "category": "PS4",
+            "stock": 5,
             "img": "https://stylewatch.vtexassets.com/arquivos/ids/196271/JOYSTICK-PS4-NEGRO-711719504313-01.jpg?v=637649787808930000"
         }
     ]

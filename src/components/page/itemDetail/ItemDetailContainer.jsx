@@ -1,16 +1,25 @@
 import { useEffect, useState } from "react"
-import ItemDetail from "./itemDetail"
+import ItemDetail from "./ItemDetail"
+import { collection, doc, getDoc } from "firebase/firestore"
+import { dataBase } from "../../../firebaseConfig"
+import { useParams } from "react-router-dom"
+
 
 
 
 const ItemDetailContainer = () => {
+    const { id } = useParams();
 
     const [products, setProducts] = useState([])
-    useEffect(() => {
 
-        let data = fetch("http://localhost:5000/productos")
-        data.then(res => res.json()).then(res => setProducts(res))
-    }, [])
+    useEffect(() => {
+        let productosFB = collection(dataBase, "productos")
+        let productRef = doc(productosFB, id)
+        getDoc(productRef).then((res) => {
+            setProducts({ ...res.data(), id: res.id })
+        })
+    }, [id])
+
     return (
         <>
             <ItemDetail products={products} />

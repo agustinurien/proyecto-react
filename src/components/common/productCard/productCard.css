@@ -1,5 +1,6 @@
 .cardContainer{
     width: 400px;
+    
 }
 
 .cImagen{
@@ -9,8 +10,8 @@
 .cCardContent{
     display: flex;
     flex-direction: column;
+    
 }
-
 
 .cBotones{
     display: flex;

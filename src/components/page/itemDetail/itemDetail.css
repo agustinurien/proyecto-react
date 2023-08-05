@@ -1,4 +1,52 @@
-.cImg{
-    background-color: blue;
-
+.contenedorProducto{
+    background-color: white;
+    margin: 20px 120px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
+
+.contenedorDetalles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.detalles{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedorImagen{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imagen{
+    height: 100%;
+}
+
+.tituloProducto{
+    font-size: 60px;
+}
+
+.precioP{
+    font-size: 35px;
+}
+
+
+
+

@@ -1,6 +1,6 @@
 ul li{
     list-style: none;
-
+    font-family: 'Anton', sans-serif;
 }
 
 .contenedorNav{
@@ -11,8 +11,7 @@ ul li{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 2px solid transparent;
-    box-shadow: 0px 1px 3px rgb(36, 36, 36);
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
 }
 
 .ahref{
@@ -36,6 +35,6 @@ ul li{
 }
 
 .contenedorNav img{
-    width: 60px;
+    padding: 8px;
     height: 60px;
 }

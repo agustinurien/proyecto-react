@@ -1,11 +1,11 @@
 
 import ProductCard from './ProductCard'
 
-const ProductCardContainer = ({ elemento, idSeleccionado }) => {
+const ProductCardContainer = ({ elemento }) => {
 
     return (
         <>
-            <ProductCard elemento={elemento} idSeleccionado={idSeleccionado} />
+            <ProductCard elemento={elemento} />
         </>
     )
 }

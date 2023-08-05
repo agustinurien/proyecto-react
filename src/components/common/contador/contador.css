@@ -1,0 +1,55 @@
+.botonesDetalles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sumar{
+    border-bottom: 1px solid rgb(149, 149, 149);
+    font-size: 23px;
+    background-color: rgb(247, 247, 247);
+    padding: 0px;
+    padding-left: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sumar div{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.sumar div button{
+    background-color: transparent;
+    border: 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.botonAgregarCarrito{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color:rgb(0, 63, 171);
+    padding: 10px;
+    border: 1px solid  rgb(0, 63, 171);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.botonAgregarCarrito:hover{
+    color: rgb(0, 63, 171);
+    background-color:white;
+    border: 1px solid  rgb(0, 63, 171);
+}
+
+.stock{
+    color: rgb(242, 37, 37);
+}
+
