@@ -11,6 +11,7 @@ const ItemListContainer = () => {
     const { categoryName } = useParams();
 
     const [products, setProducts] = useState([]);
+    console.log(products)
 
     useEffect(() => {
 
@@ -29,8 +30,6 @@ const ItemListContainer = () => {
             })
             setProducts(productos)
         })
-
-
 
     }, [categoryName]);
 
