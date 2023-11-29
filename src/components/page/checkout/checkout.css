@@ -8,20 +8,27 @@
     justify-content: center;
     color: rgb(0, 0, 0);
     font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    
 }
 
 .contenedorComponente{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    height: 75%;
+    height: 90%;
+    margin-top: 30px;
 }
 
 .contenedorImg{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(0, 0, 0);
     width: 30%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    justify-content: space-between;
+    padding-top: 50px;
 }
 
 .contenedorForm{
@@ -35,6 +42,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
+    
 }
 
 .contenedorForm form{
@@ -49,8 +57,8 @@
     width: 100%;
     height: 40px;
     border: 0px;
-    background-color: rgb(241, 241, 241);
-    border-bottom: 3px solid rgb(32, 32, 32);
+    background-color: rgb(248, 248, 248);
+    border-bottom: 3px solid rgb(187, 187, 187);
     padding-left: 10px;
 }
 
@@ -143,4 +151,45 @@
 }
 .textoBoton:hover{
     background-color: rgb(51, 129, 239);
+}
+
+.sectionResumen{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contenedorResumen{
+    padding: 0px 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+}
+
+.qxP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sectionPlata{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 30px;
+}
+
+.totalxP{
+    border-bottom: 1px solid yellow;
+}
+
+.totalPriceC{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border-bottom-right-radius: 5px;
 }

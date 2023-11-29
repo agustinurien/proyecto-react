@@ -3,7 +3,7 @@ import { Badge } from '@mui/material';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
-
+import "../cartWidget/cartWidget.css"
 
 
 
@@ -15,7 +15,7 @@ const CartWidget = () => {
 
     return (
         <>
-            <Link to="/Cart">
+            <Link className='ahref' to="/Cart">
                 <Badge badgeContent={total} color="primary" showZero>
                     <ShoppingCart fontSize='large' />
                 </Badge>

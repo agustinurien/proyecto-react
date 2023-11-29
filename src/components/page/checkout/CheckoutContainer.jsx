@@ -11,6 +11,8 @@ const CheckoutContainer = () => {
 
     const { cart, totalPrice, clearCart } = useContext(CartContext)
 
+    console.log(cart)
+
     let total = totalPrice()
 
     const [orderCodigo, setOrderCodigo] = useState("")
@@ -73,7 +75,29 @@ const CheckoutContainer = () => {
                             <div className="contenedorComponente">
 
                                 <div className="contenedorImg">
-                                    <img src="" alt="" />
+                                    <section className="sectionResumen">
+
+                                        {cart.map((element => {
+                                            return (
+                                                <div className="contenedorResumen" key={element.id}>
+                                                    <h3>{element.title}</h3>
+                                                    <section className="sectionPlata">
+
+                                                        <div className="qxP">
+                                                            <h4>{element.quantity} * </h4>
+                                                            <h4>${element.price}</h4>
+                                                        </div>
+                                                        <h2 className="totalxP">${element.price * element.quantity}</h2>
+                                                    </section>
+
+                                                </div>
+                                            )
+                                        }))}
+                                    </section>
+                                    <div className="totalPriceC">
+                                        <h2>Total</h2>
+                                        <h2> ${total}</h2>
+                                    </div>
                                 </div>
 
                                 <div className="contenedorForm">

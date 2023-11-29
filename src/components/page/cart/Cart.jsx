@@ -3,7 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import "./cart.css"
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
-import { ProductionQuantityLimits } from "@mui/icons-material";
+import { Delete, ProductionQuantityLimits } from "@mui/icons-material";
 const Cart = () => {
     const { cart, clearCart, removeFromCart, totalPrice } = useContext(CartContext);
 
@@ -42,7 +42,7 @@ const Cart = () => {
                                 <h3>${element.price}</h3>
                             </div>
                             <p>{element.quantity}</p>
-                            <button onClick={() => removeFromCart(element.id)}>eliminar</button>
+                            <button className="botonEliminar" onClick={() => removeFromCart(element.id)}><Delete /></button>
 
                         </div>
 
@@ -59,12 +59,12 @@ const Cart = () => {
                     cart.length > 0 && <div>
                         <p>${total}</p>
                         <div className="buy">
-                            <Link to="/CheckoutContainer">BUY</Link>
+                            <Link className="buyLink" to="/CheckoutContainer">BUY</Link>
                         </div>
                     </div>
                 }
             </div>
-            <div className="containerNH">
+            <div className={cart.length === 0 ? "containerNH" : ""}>
                 {
                     cart.length === 0 &&
                     <>
