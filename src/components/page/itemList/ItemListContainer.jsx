@@ -11,7 +11,7 @@ const ItemListContainer = () => {
     const { categoryName } = useParams();
 
     const [products, setProducts] = useState([]);
-    console.log(products)
+
 
     useEffect(() => {
 
