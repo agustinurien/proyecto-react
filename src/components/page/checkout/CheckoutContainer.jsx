@@ -22,7 +22,6 @@ const CheckoutContainer = () => {
         apellido: "",
         email: "",
         pais: "",
-        telefono: ""
     });
 
     if (orderCodigo) {
@@ -124,7 +123,6 @@ const CheckoutContainer = () => {
 
                                         <input type="text" name="email" id="" placeholder="Email" onChange={handleChange} />
                                         <input type="text" name="pais" placeholder="Country" onChange={handleChange} />
-                                        <input type="number" name="telefono" placeholder="Telefono" onChange={handleChange} />
 
                                         <button type="submit" >FINALIZAR</button>
                                     </form>
