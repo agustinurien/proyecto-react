@@ -1,4 +1,2 @@
 User-agent: *
-disallow: /Cart
-disallow: /CheckoutContainer
 Allow: /

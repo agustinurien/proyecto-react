@@ -1,0 +1,6 @@
+https://proyecto-react-xi.vercel.app
+https://proyecto-react-xi.vercel.app/Details
+https://proyecto-react-xi.vercel.app/Cart
+https://proyecto-react-xi.vercel.app/Category
+https://proyecto-react-xi.vercel.app/CheckoutContainer
+https://proyecto-react-xi.vercel.app/DashBoard
